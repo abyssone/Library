@@ -1,0 +1,28 @@
+.card {
+    height: 400px;
+    width: 190px;
+
+    padding: 10px 5px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    box-shadow: 0 5px 5px -5px var(--green);
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px -5px var(--green);
+}
+
+.card_image {
+    height: 70%;
+    width: 100%;
+    
+}
+
+.card_title {
+    margin-top: 10px;
+
+    font-weight: 600;
+}

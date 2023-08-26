@@ -1,0 +1,14 @@
+.container {
+    max-height: 70dvh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.container_image {
+    width: 50%;
+}
+
+.container_desc {
+    width: 50%;
+}

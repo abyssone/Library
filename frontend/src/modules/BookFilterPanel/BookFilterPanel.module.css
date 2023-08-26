@@ -1,0 +1,17 @@
+.panel {
+    padding: 10px 10px;
+    width: available;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.searchOptions {
+    display: inline;
+    white-space: nowrap;
+}
+
+.searchOptions select {
+    margin-left: 10px;
+}
