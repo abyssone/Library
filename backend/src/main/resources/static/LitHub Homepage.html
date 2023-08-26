@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>LitHub Homepage</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header__left">
+            <a href="http://localhost:8080/" class="header__logo">
+                LitHub
+            </a>
+            <form action="http://localhost:8080/" method="get" class="search-form">
+                <input type="text" name="title" class="input-text search-form__input-text">
+                <input type="submit" value="Поиск" class="link-button">
+            </form>
+        </div>
+        <div class="header__right">
+                            <p class="header__username">dmitry</p>
+                <p class="header__username">[ADMIN]</p>
+                    <a href="http://localhost:8080/admin" class="link-button">Admin</a>
+                <form action="http://localhost:8080/logout" method="post">
+                    <input type="hidden" name="_csrf" value="7eD7rHyf37EHuGReEn378RvWfu_Xx8r0dcOLg92XkxH6vWgc2YSdmhj-7oYq3lZqcVDPwn-1U9buovjZR_K9tOqvpyWe3wl6">
+                    <input type="submit" value="Выход" class="link-button">
+                </form>
+        </div>
+
+    </div>
+    <hr>
+    <div class="main">
+        <div class="left-side-menu">
+            <p>Поиск</p>
+            <p>Поиск</p>
+            <p>Поиск</p>
+            <p>Поиск</p>
+            <p>Поиск</p>
+        </div>
+        <div class="book_container">
+            <div class="book_card">
+                <p class="book_card__image-container">
+                </p>
+                <p class="book_card__title"><b>Преступление и наказание</b></p>
+                <p class="book_card__author">Достоевский</p>
+                <p class="book_card__more"><a href="http://localhost:8080/book/2" class="link">Подробнее</a></p>
+            </div>
+            <div class="book_card">
+                <p class="book_card__image-container">
+                </p>
+                <p class="book_card__title"><b>Война и мир</b></p>
+                <p class="book_card__author">Достоевский</p>
+                <p class="book_card__more"><a href="http://localhost:8080/book/52" class="link">Подробнее</a></p>
+            </div>
+            <div class="book_card">
+                <p class="book_card__image-container">
+                </p>
+                <p class="book_card__title"><b>Над пропастью во ржи </b></p>
+                <p class="book_card__author">Селленджер</p>
+                <p class="book_card__more"><a href="http://localhost:8080/book/53" class="link">Подробнее</a></p>
+            </div>
+            <div class="book_card">
+                <p class="book_card__image-container">
+                </p>
+                <p class="book_card__title"><b>Книга</b></p>
+                <p class="book_card__author">Автор</p>
+                <p class="book_card__more"><a href="http://localhost:8080/book/102" class="link">Подробнее</a></p>
+            </div>
+            <div class="book_card">
+                <p class="book_card__image-container">
+                    <img src="./LitHub Homepage_files/2" height="70px" class="book_card__image">
+                </p>
+                <p class="book_card__title"><b>ыупыуп</b></p>
+                <p class="book_card__author">ыкирки</p>
+                <p class="book_card__more"><a href="http://localhost:8080/book/153" class="link">Подробнее</a></p>
+            </div>
+            <div class="book_card">
+                <p class="book_card__image-container">
+                    <img src="./LitHub Homepage_files/102" height="70px" class="book_card__image">
+                </p>
+                <p class="book_card__title"><b>Хуета</b></p>
+                <p class="book_card__author">Подзалупин</p>
+                <p class="book_card__more"><a href="http://localhost:8080/book/252" class="link">Подробнее</a></p>
+            </div>
+    </div>
+    </div>
+
+
+
+
+    <hr>
+    <h4>Добавление книги</h4>
+    <form action="http://localhost:8080/bookcreate" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="_csrf" value="7eD7rHyf37EHuGReEn378RvWfu_Xx8r0dcOLg92XkxH6vWgc2YSdmhj-7oYq3lZqcVDPwn-1U9buovjZR_K9tOqvpyWe3wl6">
+        Название книги: <input type="text" name="title">
+        Автор: <input type="text" name="author">
+        Изображение: <input type="file" name="imageFile">
+        <input type="submit" value="Добавить">
+    </form>
+
+</body></html>
