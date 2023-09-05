@@ -1,0 +1,23 @@
+.sideBar {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 250px;
+}
+
+.option {
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: default;
+}
+
+.option:hover {
+    background-color: rgba(var(--green-rgb), .2);
+}
+
+.active {
+    background-color: rgba(var(--green-rgb), .2);
+}

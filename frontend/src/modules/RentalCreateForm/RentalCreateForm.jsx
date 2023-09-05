@@ -15,7 +15,7 @@ const RentalCreateForm = function() {
     useEffect(() => {console.log(response)}, [response]);
 
     return (
-        <>
+        <div>
             <Input placeholder='Название книги' 
                 value={form.bookTitle}
                 onChange={(e) => setForm({...form, bookTitle: e.target.value})}/>
@@ -23,7 +23,7 @@ const RentalCreateForm = function() {
                 value={form.readerEmail}
                 onChange={(e) => setForm({...form, readerEmail: e.target.value})}/>
             <button onClick={() => fetchForm('rental', form)}>Добавить</button>
-        </>
+        </div>
     );
 }
 

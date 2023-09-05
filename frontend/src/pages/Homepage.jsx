@@ -7,9 +7,12 @@ import styles from './Homepage.module.css';
 
 const Homepage = function() {
     const [bookList, setBookList] = useState([]);
+    const [search, setSearch] = useState('');
 
     function fetchToBack() {
-      fetch('http://localhost:8080', {credentials: 'include'})
+      fetch(`http://localhost:8080${search ? `?title=${search}` : ''}`, {
+          credentials: 'include'
+        })
         .then(response => response.json())
         .then(data => setBookList(data))
         .catch(e => console.log(e));
@@ -23,7 +26,7 @@ const Homepage = function() {
       <div className="App">
         <Header />
         <div className={styles.main}>
-          <BookFilterPanel />
+          <BookFilterPanel search={{search, setSearch}} filter={fetchToBack}/>
           <CardContainer bookList={bookList} />
         </div>
       </div>

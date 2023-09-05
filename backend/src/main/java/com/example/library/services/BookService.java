@@ -24,7 +24,7 @@ public class BookService {
     }
     public List<Book> listBook(String title){
 
-        List<Book> list = title == null || title == "" ? bookRepository.findAll() : bookRepository.findByTitle(title);
+        List<Book> list = title == null || title == "" ? bookRepository.findAll() : bookRepository.findByTitleContains(title);
         return list;
     }
     public void saveBook(Book book, MultipartFile imageFile) throws IOException {
